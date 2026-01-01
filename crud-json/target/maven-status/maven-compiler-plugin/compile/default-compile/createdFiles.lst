@@ -1,0 +1,6 @@
+br\com\meuprojeto\App.class
+br\com\meuprojeto\json\MainGUI.class
+br\com\meuprojeto\json\Cliente.class
+br\com\meuprojeto\json\Main.class
+br\com\meuprojeto\json\ClienteCRUDJSON$1.class
+br\com\meuprojeto\json\ClienteCRUDJSON.class

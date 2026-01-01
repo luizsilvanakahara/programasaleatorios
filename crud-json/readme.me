@@ -1,0 +1,101 @@
+CRUD JSON com Interface Gráfica – Projeto Maven
+
+Este projeto é um CRUD de clientes usando Java, persistindo dados em JSON com Gson e apresentando uma interface gráfica Swing.
+
+Ele permite:
+
+Adicionar novos clientes
+
+Remover clientes existentes
+
+Listar clientes carregados do arquivo JSON
+
+Persistência automática em clientes.json
+
+📂 Estrutura do projeto
+crud-json/
+ ├─ pom.xml
+ └─ src/
+     ├─ main/
+     │   └─ java/
+     │       └─ br/com/meuprojeto/json/
+     │           ├─ Cliente.java
+     │           ├─ ClienteCRUDJSON.java
+     │           └─ MainGUI.java
+     └─ test/
+         └─ java/
+
+📌 Pré-requisitos
+
+Java JDK 8 ou superior
+
+Maven instalado (mvn -v para checar)
+
+Editor ou IDE (Eclipse, IntelliJ, VS Code, etc.)
+
+⚡ Comandos Maven Úteis
+Comando	Descrição
+mvn clean	Remove a pasta target/ e arquivos compilados antigos.
+mvn compile	Compila o código Java em src/main/java.
+mvn exec:java -Dexec.mainClass="br.com.meuprojeto.json.MainGUI"	Executa a aplicação GUI Swing.
+mvn test	Executa todos os testes JUnit de src/test/java.
+mvn package	Empacota o projeto em um JAR (target/crud-json-1.0-SNAPSHOT.jar).
+mvn install	Instala o JAR no repositório Maven local (~/.m2/repository).
+mvn clean compile exec:java	Limpa, compila e executa tudo em um único comando.
+mvn exec:java -Dexec.mainClass="..." -X	Executa com logs detalhados (debug).
+mvn dependency:tree	Mostra todas as dependências Maven.
+mvn versions:display-dependency-updates	Verifica atualizações das dependências.
+📝 Notas importantes
+
+Pacotes e pastas devem coincidir: package br.com.meuprojeto.json; → pasta br/com/meuprojeto/json/.
+
+Sempre limpar antes de executar (mvn clean) se houver erros de classe não encontrada.
+
+O arquivo clientes.json é criado automaticamente na raiz do projeto.
+
+Para adicionar novos clientes, use a interface gráfica.
+
+Evite editar clientes.json manualmente, para não quebrar o formato.
+
+💻 Como rodar a aplicação
+
+Limpar e compilar:
+
+mvn clean compile
+
+
+Executar a GUI:
+
+mvn exec:java -Dexec.mainClass="br.com.meuprojeto.json.MainGUI"
+
+🖼️ Tela da aplicação (exemplo)
++----------------------------------------------------+
+| ID: [   ]   Nome: [           ]   [Adicionar]     |
+| [Remover]                                         |
++----------------------------------------------------+
+| Lista de Clientes:                                |
+| 1 - Luis                                         |
+| 2 - Maria                                        |
+| 3 - João                                         |
++----------------------------------------------------+
+
+
+Digite o ID e Nome e clique Adicionar.
+
+Selecione um cliente na lista e clique Remover.
+
+Todas as alterações são salvas automaticamente em clientes.json.
+
+💡 Dicas de edição do JSON
+
+O arquivo clientes.json será criado automaticamente.
+
+Formato do JSON:
+
+[
+  {"id":1,"nome":"Luis"},
+  {"id":2,"nome":"Maria"}
+]
+
+
+Evite alterar manualmente IDs duplicados ou remover chaves, para não causar erros na aplicação.
