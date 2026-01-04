@@ -1,0 +1,5 @@
+com\exemplo\consumerA\ConsumerA.class
+com\exemplo\consumerA\ConsumerAConfig.class
+com\exemplo\consumerA\ConsumerAApplication.class
+com\exemplo\consumerB\ConsumerB.class
+com\exemplo\consumerA\ConsumerAExchangeConfig.class

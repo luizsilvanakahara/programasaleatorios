@@ -1,0 +1,4 @@
+com\exemplo\producer\MessageProducer.class
+com\exemplo\producer\ProducerController.class
+com\exemplo\producer\ProducerApplication.class
+com\exemplo\producer\RabbitConfig.class
